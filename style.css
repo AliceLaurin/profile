@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;700");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700");
+
+body {
+  background: linear-gradient(#7F7FD5, #86A8E7, #91EAE4);
+    font-family:"Urbanist";
+  color: #354f52;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.container{
+  width: 1024px;
+  margin: auto;
+}
+h1{
+  color: #598392;
+  font-family:"Comfortaa";
+  font-size: 60px;
+  line-height: 50px;
+  text-align: center;
+}
+
+#titre_h1{
+  word-wrap: break-word;
+}
+
+h2{
+  color: #2a6f97;
+  font-family:"Comfortaa";
+  font-size: 25px;
+  line-height: 40px;
+}
+
+h3{
+  color: #2a6f97;
+  font-family:"Comfortaa";
+  font-size: 20px;
+  line-height: 30px;
+}
+
+a{
+  color: #598392;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+}
+
+.rounded_images{
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+
+.two_blocks{
+  display: flex;
+  gap: 15px;
+}
+
+.flex_column{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.child{
+  width: 300px;
+  background-color:white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.card {
+  border-radius: 15px;
+  background-color:white;
+  padding: 20px;
+  margin: 15px auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.one_block{
+  border-radius: 15px;
+  background-color:white;
+  width: 100%;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.text_left {
+  text-align: left;
+}
+
+.big_blue_text{
+  color: #598392;
+  font-family:"Comfortaa";
+  font-size: 25px;
+  text-align: center;
+}
+
+
+@media (max-width: 960px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* Pour un écran < 720px, cette classe CSS s'applique */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* Pour un écran < 540px, cette classe CSS s'applique */
+  .container {
+    width: 300px;
+  }
+  .two_blocks{
+    flex-direction: column;
+  }
+  .child{
+    width: 260px;
+  }
+
+  .one_block{
+    width: 260px;
+  }
+
+  #image_header{
+    width: 260px;
+    height: 260px;
+  }
+
+}
